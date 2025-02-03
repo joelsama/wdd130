@@ -4,9 +4,9 @@
     --secondary-color: #a0c892;
     --text-color: #333;
     --background-color: #f1f1f1;
-    --accent: 1px color: #95c6b1
-    --accent: 2px color: #bedcfe
-
+    --accent-color1: #95c6b1;
+    --accent-color2: #bedcfe;
+    --accent-border: 2px solid var(--accent-color1);
 }
 
 /* General Styles */
@@ -38,7 +38,7 @@ header img {
 }
 
 nav a {
-    color: white;
+    color: var(--text-color); /* Better contrast */
     text-decoration: none;
     margin: 0 15px;
 }
@@ -57,7 +57,7 @@ nav a {
 
 .hero h1 {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -76,17 +76,20 @@ article {
     padding: 15px;
     border-radius: 5px;
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 article img {
-    float: right;
     width: 100px;
-    margin-left: 10px;
     border-radius: 50%;
+    margin-left: 15px;
 }
 
 /* Social Links */
 .sociallinks a {
+    display: inline-block;
     text-decoration: none;
 }
 
