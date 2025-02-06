@@ -13,8 +13,19 @@
 body {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
     color: var(--text-color);
     background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Headings */
@@ -26,21 +37,29 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     background: var(--secondary-color);
     padding: 20px;
+    border-bottom: var(--accent-border);
 }
 
 header img {
-    width: 120px;
+    height: 50px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 nav a {
-    color: var(--text-color); /* Better contrast */
-    text-decoration: none;
-    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
 }
 
 /* Hero Section */
@@ -66,6 +85,60 @@ nav a {
     border-radius: 5px;
 }
 
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* History Section */
+.history {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--accent-color2);
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Adventure Section */
+.adventures {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--accent-color1);
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
 /* Article */
 article {
     position: absolute;
@@ -87,13 +160,27 @@ article img {
     margin-left: 15px;
 }
 
-/* Social Links */
-.sociallinks a {
-    display: inline-block;
-    text-decoration: none;
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-top: var(--accent-border);
+}
+
+footer p {
+    margin: 0;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px;
 }
 
 .sociallinks img {
+    height: 30px;
     width: 30px;
     margin: 0 5px;
 }
