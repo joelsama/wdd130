@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Joel Rafting Company. Find our contact details, send us a message, and explore our location on Google Maps.">
+  <title>Contact Us | Joel Rafting Company</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/wwr_logo.jpg" alt="Joel Rafting Company Logo">
+    <nav>
+      <a href="#history">History</a>
+      <a href="#adventure">Adventure</a>
+      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+  
+    <section>
+      <h2>Our Contact Information</h2>
+      <p>📍 Address: 6, Mercy Street, Irebami Poromosan Estate, Idiroko, Itamaga</p>
+      <p>📞 Phone: +234 813 0466 205</p>
+      <p>✉️ Email: danogodogujoel@gmail.com</p>
+  
+     <!-- Embedded Google Map -->
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705.4667344273134!2d3.544184651258709!3d6.627851485856732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103beeddd0d9c935%3A0xc2af2e333ced071f!2sItamaga%20Bus%20Stop!5e0!3m2!1sen!2sng!4v1739131565768!5m2!1sen!2sng" 
+width="600" 
+height="450" 
+allowfullscreen="" 
+loading="lazy" 
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+  
+    <section>
+      <h2>Meet Our Team</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="Happy employee">
+        <figcaption>Racheal Esther - Lead Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="Happy employee">
+        <figcaption>Raba Vanessa - Customer Support</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="Happy employee">
+        <figcaption>Ayodele Gadus - Operations Manager</figcaption>
+      </figure>
+    </section>
+  
+    <section>
+      <h2>Contact Us Form</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+        </fieldset>
+  
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+  
+        <label>
+          <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+        </label>
+  
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2024 | Joel Rafting Company | Dan-Ogodogu Joel</p>
+    <nav class="sociallinks">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.webp" alt="Follow us on Facebook">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.webp" alt="Follow us on Twitter">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.webp" alt="Follow us on Instagram">
+        </a>
+    </nav>
+  </footer>
+
+</body>
+</html>
